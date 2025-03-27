@@ -1,0 +1,14 @@
+public class Tester {
+    public static void main(String[]args){
+        School student=new School("tosia",10,12345,700.75);
+        System.out.println(student.getName());
+        System.out.println(student.getLunchMoney());
+        student.buyLunch();
+        System.out.println(student.getLunchMoney());
+        student.addLunchMoney(20.0);
+        System.out.println(student.getLunchMoney());
+        System.out.println(student.getGrade());
+        student.skipGrade();
+        System.out.println(student.getGrade());
+    }
+}
