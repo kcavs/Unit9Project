@@ -1,6 +1,6 @@
 public class Tester {
     public static void main(String[]args){
-        School student=new School("tosia",10,12345,700.75);
+        HighSchool student=new HighSchool("tosia",10,12345,700.75,133);
         System.out.println(student.getName());
         System.out.println(student.getLunchMoney());
         student.buyLunch();
@@ -10,5 +10,6 @@ public class Tester {
         System.out.println(student.getGrade());
         student.skipGrade();
         System.out.println(student.getGrade());
+        System.out.println(student.getGradeName());
     }
 }

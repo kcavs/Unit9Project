@@ -4,6 +4,14 @@ public class HighSchool extends School{
     public HighSchool(String n,int g, int i, double m, int l){
         super(n,g,i,m);
         lockerNum=l;
+    }
+    public int getLockerNum(){
+        return lockerNum;
+    }
+    public void moveLocker(int i){
+        lockerNum=i;
+    }
+    public String getGradeName(){
         if(super.getGrade()<9){
             gradeName= "not in highschool, get out";
         }
@@ -19,14 +27,6 @@ public class HighSchool extends School{
         if(super.getGrade()==12){
             gradeName="senior";
         }
-    }
-    public int getLockerNum(){
-        return lockerNum;
-    }
-    public void moveLocker(int i){
-        lockerNum=i;
-    }
-    public String getGradeName(){
        return gradeName;
     }
     public String toString(){
