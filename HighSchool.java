@@ -1,6 +1,10 @@
 public class HighSchool extends School{
     private int lockerNum;
     private String gradeName;
+    public HighSchool(){
+        super();
+        lockerNum=0;
+    }
     public HighSchool(String n,int g, int i, double m, int l){
         super(n,g,i,m);
         lockerNum=l;

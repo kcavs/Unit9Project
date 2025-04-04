@@ -3,6 +3,12 @@ public class School{
     private int grade;
     private int id;
     private double lunchMoney;
+    public School(){
+        name="student";
+        grade=0;
+        id=00000;
+        lunchMoney=0;
+    }
     public School(String n,int g, int i, double l){
         name=n;
         grade=g;
